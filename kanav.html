@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<h1> KANAV BATISH<br>
+C0730437</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+        $("#fading").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("very slow");
+        $("#div3").fadeIn(5000);
+    });
+        $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+         $("#animate").click(function(){
+        $("div").animate({left: '460px'});
+    });
+    $("#click").click(function(){
+        $("#p1").css("color", "purple").slideUp(2000).slideDown(2000);
+    });
+});
+</script>
+<style> 
+#panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color: yellow;
+    border: solid 1px red;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<p>I am doing computer programming at lambton college mississauga and my hobbies are dancing and playing cricket</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="fading">Click to fade in boxes</button>
+
+<div id="div1" style="width:80px;height:75px;display:none;background-color:black;"></div><br>
+<div id="div2" style="width:80px;height:75px;display:none;background-color:red;"></div><br>
+<div id="div3" style="width:80px;height:75px;display:none;background-color:blue"></div><br>
+
+<div id="flip">Click to slide down </div>
+<div id="panel">it is working.</div>
+
+<button id="animate">Start Animation</button>
+
+<p> click to Start box Animation</p>
+
+<div style="background:red;height:75px;width:75px;position:absolute;"></div>
+
+<button id="click">Click me</button>
+<p id="p1">BLAST</p>
+
+
+
+</body>
+</html>
